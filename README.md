@@ -1,4 +1,4 @@
-# NEP-TASK
+# AutomationTest-Project
 **Task 1 - Selenium with Python**
 This Project is to test the following functionlity of Book Store Application
         Registration, 
