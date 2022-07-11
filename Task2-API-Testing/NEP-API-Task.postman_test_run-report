@@ -1,0 +1,460 @@
+{
+	"id": "a8e7b183-672f-4f09-a3aa-b8b2a3f4cd38",
+	"name": "NEP-API-Task",
+	"timestamp": "2022-06-17T19:37:59.020Z",
+	"collection_id": "21115828-61e150ce-b74c-4af7-bf1b-e6fcbed4a5c4",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 21,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "67b08828-62c4-4334-bbe4-f7bcb585b8dc",
+			"name": "SmokeTest - Authorization User not Found",
+			"url": "https://demoqa.com/Account/v1/Authorized",
+			"time": 210,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Validate - Schema as JSON": true,
+				"Validate - User Not Found": true
+			},
+			"testPassFailCounts": {
+				"Validate - Schema as JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate - User Not Found": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				210
+			],
+			"allTests": [
+				{
+					"Validate - Schema as JSON": true,
+					"Validate - User Not Found": true
+				}
+			]
+		},
+		{
+			"id": "909fc580-d859-4b1f-bcf2-435a053b7e9f",
+			"name": "Create New User",
+			"url": "https://8b879200-d000-4d27-9629-3f01c899eb57.mock.pstmn.io/Post",
+			"time": 356,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"New User Created": true
+			},
+			"testPassFailCounts": {
+				"New User Created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				356
+			],
+			"allTests": [
+				{
+					"New User Created": true
+				}
+			]
+		},
+		{
+			"id": "fe92ae86-1b93-4a15-84f7-32b22cd69c45",
+			"name": "Generate Token",
+			"url": "https://demoqa.com/Account/v1/GenerateToken",
+			"time": 140,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Test Token Generation Status": true,
+				"Test Token Generation result": true
+			},
+			"testPassFailCounts": {
+				"Test Token Generation Status": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Test Token Generation result": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				140
+			],
+			"allTests": [
+				{
+					"Test Token Generation Status": true,
+					"Test Token Generation result": true
+				}
+			]
+		},
+		{
+			"id": "42a25987-9893-4d84-967e-c886de43744d",
+			"name": "user Authenticatoin Success",
+			"url": "https://demoqa.com/Account/v1/Authorized",
+			"time": 73,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Test Authorization Success Status": true,
+				"Test Authorization Success body": true
+			},
+			"testPassFailCounts": {
+				"Test Authorization Success Status": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Test Authorization Success body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				73
+			],
+			"allTests": [
+				{
+					"Test Authorization Success Status": true,
+					"Test Authorization Success body": true
+				}
+			]
+		},
+		{
+			"id": "17c8a389-dbaf-4879-ae27-ac9d7095ca99",
+			"name": "User Authentication BadRequest",
+			"url": "https://demoqa.com/Account/v1/Authorized",
+			"time": 45,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Test Authentication Status 400": true,
+				"Test Authentication Bad request": true
+			},
+			"testPassFailCounts": {
+				"Test Authentication Status 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Test Authentication Bad request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				45
+			],
+			"allTests": [
+				{
+					"Test Authentication Status 400": true,
+					"Test Authentication Bad request": true
+				}
+			]
+		},
+		{
+			"id": "66ac7084-8332-4656-a351-a6b67c78edc7",
+			"name": "Response-Body-Type-Validation",
+			"url": "https://demoqa.com/Account/v1/Authorized",
+			"time": 67,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Content-Type is present": true,
+				"Content-Type is JSON": true
+			},
+			"testPassFailCounts": {
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is JSON": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				67
+			],
+			"allTests": [
+				{
+					"Content-Type is present": true,
+					"Content-Type is JSON": true
+				}
+			]
+		},
+		{
+			"id": "eb36ba3a-7002-4e29-b992-ccbeb260f8f3",
+			"name": "User Already Exists",
+			"url": "https://demoqa.com/Account/v1/User/",
+			"time": 62,
+			"responseCode": {
+				"code": 406,
+				"name": "Not Acceptable"
+			},
+			"tests": {
+				"Test User Already Exist Status": true,
+				"Test User exists Message": true
+			},
+			"testPassFailCounts": {
+				"Test User Already Exist Status": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Test User exists Message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				62
+			],
+			"allTests": [
+				{
+					"Test User Already Exist Status": true,
+					"Test User exists Message": true
+				}
+			]
+		},
+		{
+			"id": "0a066ea9-22c5-4972-b831-818cc89350c6",
+			"name": "Get Book Details",
+			"url": "https://demoqa.com/BookStore/v1/Book?ISBN=9781449325862",
+			"time": 51,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Get Book Details": true
+			},
+			"testPassFailCounts": {
+				"Get Book Details": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				51
+			],
+			"allTests": [
+				{
+					"Get Book Details": true
+				}
+			]
+		},
+		{
+			"id": "5e4ca895-6b90-4f60-8146-f29f3ad5ec15",
+			"name": "Add New Book",
+			"url": "https://8b879200-d000-4d27-9629-3f01c899eb57.mock.pstmn.io/post",
+			"time": 359,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"New Book Added": true
+			},
+			"testPassFailCounts": {
+				"New Book Added": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				359
+			],
+			"allTests": [
+				{
+					"New Book Added": true
+				}
+			]
+		},
+		{
+			"id": "e4a4e59e-721e-4bfd-8bcf-296dd389eb74",
+			"name": "Verify Newely Added Book",
+			"url": "https://8b879200-d000-4d27-9629-3f01c899eb57.mock.pstmn.io/get",
+			"time": 375,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify Newely Added Book": true
+			},
+			"testPassFailCounts": {
+				"Verify Newely Added Book": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				375
+			],
+			"allTests": [
+				{
+					"Verify Newely Added Book": true
+				}
+			]
+		},
+		{
+			"id": "58fe6348-6820-4bdb-8ae0-b707a9c08cb4",
+			"name": "Update ISBN",
+			"url": "https://8b879200-d000-4d27-9629-3f01c899eb57.mock.pstmn.io/put",
+			"time": 335,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Test Update ISBN": true
+			},
+			"testPassFailCounts": {
+				"Test Update ISBN": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				335
+			],
+			"allTests": [
+				{
+					"Test Update ISBN": true
+				}
+			]
+		},
+		{
+			"id": "1d783b7d-ce29-42a9-89da-92575d84601d",
+			"name": "Verify Only Isbn Updated",
+			"url": "https://8b879200-d000-4d27-9629-3f01c899eb57.mock.pstmn.io/get?ISBN=123456",
+			"time": 334,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify  ": true,
+				"Verify only ISBN updated": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Verify  ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify only ISBN updated": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				334
+			],
+			"allTests": [
+				{
+					"Verify  ": true,
+					"Verify only ISBN updated": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "f1a5cae4-b200-4071-be98-eb7a3e577557",
+			"name": "mock",
+			"url": "https://8b879200-d000-4d27-9629-3f01c899eb57.mock.pstmn.io/get",
+			"time": 357,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				357
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2764,
+	"collection": {
+		"requests": [
+			{
+				"id": "67b08828-62c4-4334-bbe4-f7bcb585b8dc",
+				"method": "POST"
+			},
+			{
+				"id": "909fc580-d859-4b1f-bcf2-435a053b7e9f",
+				"method": "POST"
+			},
+			{
+				"id": "fe92ae86-1b93-4a15-84f7-32b22cd69c45",
+				"method": "POST"
+			},
+			{
+				"id": "42a25987-9893-4d84-967e-c886de43744d",
+				"method": "POST"
+			},
+			{
+				"id": "17c8a389-dbaf-4879-ae27-ac9d7095ca99",
+				"method": "POST"
+			},
+			{
+				"id": "66ac7084-8332-4656-a351-a6b67c78edc7",
+				"method": "POST"
+			},
+			{
+				"id": "eb36ba3a-7002-4e29-b992-ccbeb260f8f3",
+				"method": "POST"
+			},
+			{
+				"id": "0a066ea9-22c5-4972-b831-818cc89350c6",
+				"method": "GET"
+			},
+			{
+				"id": "5e4ca895-6b90-4f60-8146-f29f3ad5ec15",
+				"method": "POST"
+			},
+			{
+				"id": "e4a4e59e-721e-4bfd-8bcf-296dd389eb74",
+				"method": "GET"
+			},
+			{
+				"id": "58fe6348-6820-4bdb-8ae0-b707a9c08cb4",
+				"method": "PUT"
+			},
+			{
+				"id": "1d783b7d-ce29-42a9-89da-92575d84601d",
+				"method": "GET"
+			},
+			{
+				"id": "f1a5cae4-b200-4071-be98-eb7a3e577557",
+				"method": "GET"
+			}
+		]
+	}
+}
